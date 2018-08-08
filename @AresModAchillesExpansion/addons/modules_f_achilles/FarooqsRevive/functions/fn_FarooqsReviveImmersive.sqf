@@ -33,7 +33,7 @@ private _unconsiousPlayers  = allPlayers select { _x getVariable ["FAR_isUnconsc
 private _sortedPlayers = [_unconsiousPlayers, [], {_x distance _object}, "ASCEND"] call BIS_fnc_sortBy;
 private _nearestPlayer = _sortedPlayers select 0;
 
-if (isNil "_nearestPlayer") exitWith { [localize "STR_AMAE_NO_PLAYER_UNCONSIOUS"] call Ares_fnc_ShowZeusErrorMessage; };
+if (isNil "_nearestPlayer") exitWith { [localize "STR_AMAE_NO_PLAYER_UNCONSIOUS"] call Achilles_fnc_ShowZeusErrorMessage; };
 
 // Let Zeus know what will happen
 [format [localize "STR_AMAE_REVIVE_PLAYER", name _nearestPlayer]] call Ares_fnc_ShowZeusMessage;
