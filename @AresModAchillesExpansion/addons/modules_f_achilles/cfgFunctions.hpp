@@ -8,6 +8,7 @@ class CfgFunctions
 		#include "Behaviours\cfgFunctionsBehaviours.hpp"
 		#include "DevTools\cfgFunctionsDevTools.hpp"
 		#include "Environment\cfgFunctionsEnvironment.hpp"
+		#include "FarooqsRevive\cfgFunctionsBehaviours.hpp"
 		#include "FireSupport\cfgFunctionsFireSupport.hpp"
 		#include "Buildings\cfgFunctionsBuildings.hpp"
 		#include "Effects\cfgFunctionsEffects.hpp"

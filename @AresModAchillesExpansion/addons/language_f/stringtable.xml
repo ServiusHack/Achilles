@@ -576,6 +576,9 @@
                 <Chinesesimp>军火库</Chinesesimp>
                 <Chinese>軍火庫</Chinese>
             </Key>
+            <Key ID="STR_AMAE_FAROOQS_REVIVE">
+                <Original>Farooq's Revive</Original>
+            </Key>
         </Container>
         <Container name="Ares Modules">
             <Key ID="STR_AMAE_SEARCH_BUILDING">
@@ -4932,6 +4935,21 @@
                 <Chinesesimp>严重</Chinesesimp>
                 <Chinese>嚴重</Chinese>
             </Key>
+            <Key ID="STR_AMAE_REVIVE_PLAYER">
+                <Original>Player '%1' will be revived.</Original>
+                <English>Player '%1' will be revived.</English>
+                <German>Der Spieler '%1' wird wiederbelebt.</German>
+            </Key>
+            <Key ID="STR_AMAE_REVIVE_FEW_SECONDS">
+                <Original>Player will be revived in a few seconds.</Original>
+                <English>Player will be revived in a few seconds.</English>
+                <German>Der Spieler wird in einigen Sekunden wiederbelebt.</German>
+            </Key>
+            <Key ID="STR_AMAE_NO_PLAYER_UNCONSIOUS">
+                <Original>No player is unconsious.</Original>
+                <English>No player is unconsious.</English>
+                <German>Kein Spieler ist bewusstlos.</German>
+            </Key>
         </Container>
         <Container name="Weather dialog strings">
             <Key ID="STR_AMAE_TRANSITION">
@@ -5701,6 +5719,18 @@
                 <Japanese>感情を許可</Japanese>
                 <Chinesesimp>允许溃逃</Chinesesimp>
                 <Chinese>允許潰逃</Chinese>
+            </Key>
+        </Container>
+        <Container name="Farooq's Revive Strings">
+            <Key ID="STR_AMAE_INSTANT_REVIVE">
+                <Original>Instant Revive</Original>
+                <English>Instant Revive</English>
+                <German>Sofort wiederbeleben</German>
+            </Key>
+            <Key ID="STR_AMAE_IMMERSIVE_REVIVE">
+                <Original>Immersive Revive</Original>
+                <English>Immersive Revive</English>
+                <German>Immersiv wiederbeleben</German>
             </Key>
         </Container>
         <Container name="cfg Waypoints">

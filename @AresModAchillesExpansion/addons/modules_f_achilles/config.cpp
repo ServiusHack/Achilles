@@ -20,6 +20,8 @@ class CfgPatches
 			"Achilles_Change_Ability_Module",
 			"Achilles_Change_Altitude_Module",
 			"Achilles_SuicideBomber_Module",
+			"Achilles_FarooqsRevive_Instant_Module",
+			"Achilles_FarooqsRevive_Immersive_Module",
 			"Achilles_Buildings_Destroy_Module",
 			"Achilles_Buildings_LockDoors_Module",
 			"Achilles_Buildings_ToggleLight_Module",
