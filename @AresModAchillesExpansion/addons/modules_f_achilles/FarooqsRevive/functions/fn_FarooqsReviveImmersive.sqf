@@ -23,8 +23,8 @@ if (isNull _object) exitWith {[localize "STR_AMAE_NO_UNIT_SELECTED"] call Achill
 // Displays error message if the module has been placed on top of a player.
 if (isPlayer _object || isPlayer driver _object) exitWith {[localize "STR_AMAE_NO_UNIT_SELECTED"] call Achilles_fnc_ShowZeusErrorMessage};
 
-// Sets revive functionality
-if (not (_object isKindOf "Man")) exitWith {[localize "STR_AMAE_ENYO_OBJECTS_NOT_ALLOWED"] call Achilles_fnc_ShowZeusErrorMessage};
+// Make sure we use a unit. Vehicles support kicks in later.
+_object = driver _object;
 
 // find all unconsious players
 private _unconsiousPlayers  = allPlayers select { _x getVariable ["FAR_isUnconscious", 0] == 1 };
@@ -43,8 +43,29 @@ if (isNil "_nearestPlayer") exitWith { [localize "STR_AMAE_NO_PLAYER_UNCONSIOUS"
   private _object = _this select 0;
   private _nearestPlayer = _this select 1;
 
-  // move unit to perform the revive
-  _object doMove (getPos _nearestPlayer);
+  if (vehicle _object == _object) then {
+    // move unit to perform the revive
+    _object doMove (getPos _nearestPlayer);
+  } else {
+    private _vehicle = vehicle _object;
+
+    // make vehicle drive to the player
+    driver _vehicle doMove (getPos _nearestPlayer);
+
+    // wait for vehicle to be close enough
+    // Make sure we're close to get off when the vehicle stands still.
+    waitUntil{(speed _vehicle) < 0.1 and (_object distance _nearestPlayer) < 20};
+
+    // make sure the vehicle stops
+    doStop driver _vehicle;
+
+    // make the unit leave the vehicle
+    _object action ["GetOut", _vehicle];
+    _object leaveVehicle _vehicle;
+
+    // finally move unit to perform the revive
+    _object doMove (getPos _nearestPlayer);
+  };
 
   waitUntil{(_object distance _nearestPlayer) < 2};
 
