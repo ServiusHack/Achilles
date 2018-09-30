@@ -46,5 +46,12 @@ class cfgWaypoints
 			file = "\achilles\functions_f_achilles\scripts\fn_wpRepair.sqf";
 			icon = "\achilles\data_f_achilles\icons\icon_position.paa";
 		};
+		class Pickup
+		{
+			displayName = "$STR_AMAE_WP_PICKUP";
+			displayNameDebug = "PICKUP";
+			file = "\achilles\functions_f_achilles\scripts\fn_wpPickup.sqf";
+			icon = "\achilles\data_f_achilles\icons\icon_position.paa";
+		};
 	};
 };

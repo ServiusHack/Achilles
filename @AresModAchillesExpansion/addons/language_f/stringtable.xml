@@ -5831,6 +5831,11 @@
                 <Chinesesimp>维修</Chinesesimp>
                 <Chinese>維修</Chinese>
             </Key>
+            <Key ID="STR_AMAE_WP_PICKUP">
+                <Original>PICKUP</Original>
+                <English>PICKUP</English>
+                <German>Aufsammeln</German>
+            </Key>
         </Container>
         <Container name="cfg Hints">
             <Key ID="STR_AMAE_PLACING_MODULES">
