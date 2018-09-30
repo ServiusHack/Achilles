@@ -909,6 +909,21 @@
                 <Chinesesimp>生成特效</Chinesesimp>
                 <Chinese>生成特效</Chinese>
             </Key>
+            <Key ID="STR_AMAE_SPAWN_CIVILIANS">
+                <Original>Spawn Civilians</Original>
+                <English>Spawn Civilians</English>
+                <German>Zivilisten spawnen</German>
+            </Key>
+            <Key ID="STR_AMAE_SPAWN_CIVILIANS_AMOUNT">
+                <Original>Amount</Original>
+                <English>Amount</English>
+                <German>Anzahl</German>
+            </Key>
+            <Key ID="STR_AMAE_SPAWN_CIVILIANS_DISTANCE">
+                <Original>Distance</Original>
+                <English>Radius to search for buildings in</English>
+                <German>Radius in dem Gebäude gesucht werden</German>
+            </Key>
             <Key ID="STR_AMAE_LIGHT_SOURCE">
                 <Original>Light Source</Original>
                 <English>Light Source</English>

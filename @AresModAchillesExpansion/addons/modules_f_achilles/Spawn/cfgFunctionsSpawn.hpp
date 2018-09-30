@@ -7,4 +7,5 @@ class Achilles_Spawn_Function_Base
 	class SpawnCarrier;
 	class SpawnExplosives;
 	class SpawnEmptyObject;
+	class SpawnCivilians;
 };
